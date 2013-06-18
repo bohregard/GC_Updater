@@ -1,5 +1,5 @@
 import webParse, downloads, time, compare
-
+print "test"
 print "Choose an option:\n1: Check for updates\n2: Download and install updates\n3: Check and download updates (no install)"
 
 x = None
