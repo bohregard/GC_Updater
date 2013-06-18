@@ -1,35 +1,37 @@
-import webParse, downloads, time, compare
-print "test"
-print "Choose an option:\n1: Check for updates\n2: Download and install updates\n3: Check and download updates (no install)"
+import webParse, downloads, compare, time
 
-x = None
-while x != 'x':
-    x = raw_input('Enter an option (x to exit): ')
-    if x == '1':
-        print "Checking versions from web...\n"
-        time.sleep(.5)
-        adobeupdate = webParse.AdobeUpdater()
-        (windows, firefox) = adobeupdate.adobe_version()
+#########################################################
+#               Check versions from web                 #
+#########################################################
+print "Checking versions from web...\n"
+time.sleep(2)
+adobeupdate = webParse.AdobeUpdater()
+(windows, firefox) = adobeupdate.adobe_version()
 
-        javaupdate = webParse.JavaUpdater()
-        (java) = javaupdate.java_check()
+javaupdate = webParse.JavaUpdater()
+(java) = javaupdate.java_check()
+print windows, firefox, java
 
-        print "Comparing versions...\n"
-        time.sleep(.5)
-        textversion = downloads.Downloads()
-        (windows_txt,firefox_txt,java_txt) = textversion.version_print()
 
-        compare.Compare(windows,windows_txt,firefox,firefox_txt,java,java_txt)
-        
-        break
-    elif x == '2':
-        print "Choice 2"
-        break
-    elif x == '3':
-        print "Choice 3"
-        break
-    elif x == 'x':
-        break
-    else:
-        print "Not a valid option"
-print "\nCompleted with 0 errors"
+#########################################################
+#               Compare versions from file              #
+#########################################################
+print "\nComparing versions...\n"
+time.sleep(2)
+textversion = downloads.Downloads()
+(windows_txt,firefox_txt,java_txt) = textversion.version_print()
+print windows_txt,firefox_txt,java_txt,'\n'
+
+
+#########################################################
+#               Download and write versions             #
+#########################################################
+
+a,b,c,d,e,f = ('','','','','','')
+compare.DownloadFiles(windows, windows_txt,firefox,firefox_txt,java,java_txt)
+
+
+downloads.WriteDownloadsFile(windows,firefox,java)
+
+print "\nFinished\n"
+time.sleep(5)

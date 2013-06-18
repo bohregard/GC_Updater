@@ -1,0 +1,8 @@
+Windows:
+11.7.700.224
+Firefox:
+11.7.700.224
+Java:
+Recommended Version 7 Update 21 (filesize:  882 KB)
+
+
