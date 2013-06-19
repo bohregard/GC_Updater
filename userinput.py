@@ -36,7 +36,17 @@ while x != 'x':
         textversion = downloads.Downloads()
         (windows_txt,firefox_txt,java_txt) = textversion.version_print()
 
-        compare.Compare(windows,windows_txt,firefox,firefox_txt,java,java_txt)
+        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt)
+        (version, arch) = SilentInstall.PlatformLookup().version_print()
+        print "Version:",version,"Arch:",arch
+        
+        if java != java_txt:
+            SilentInstall.SilentInstallJava(arch)
+        else:
+            print "Java already installed and up-to-date"
+
+        if windows != windows_txt:
+            SilentInstall.SilentInstallAdobe(version)
 
         
         break

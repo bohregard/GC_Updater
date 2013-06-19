@@ -6,7 +6,7 @@ class PlatformLookup:
     def version_print(self):
         version = platform.release()
         arch = platform.machine()
-        print "Windows",version,"detected"
+        #print "Windows",version,"detected"
         return version, arch
 
 

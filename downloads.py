@@ -1,5 +1,8 @@
 import urllib2, urllib
 from bs4 import BeautifulSoup
+from selenium import webdriver  
+from selenium.common.exceptions import NoSuchElementException  
+from selenium.webdriver.common.keys import Keys  
 
 ############################################
 #Checks Text file to begin version compares#
@@ -46,13 +49,18 @@ class Downloads:
 
 class JavaDownload:
     def __init__(self):
-        html = urllib2.urlopen("http://java.com/en/download/manual.jsp")
-        html = html.read()
-        soup = BeautifulSoup(html)
+        browser = webdriver.Ie()  
+        browser.get('http://java.com/en/download/manual.jsp')  
+        html_source = browser.page_source
+        browser.quit()
+        #html = urllib2.urlopen("http://java.com/en/download/manual.jsp")
+        #html = html.read()
+        soup = BeautifulSoup(html_source)
         (java32,java64) = ('','')
-        java64 = 'http://javadl.sun.com/webapps/download/AutoDL?BundleId=76862'
         for link in soup.find_all(title='Download Java software for Windows Offline'):
             java32 = link.get('href')
+        for link in soup.find_all(title='Download Java software for Windows (64-bit)'):
+            java64 = link.get('href')
         urllib.urlretrieve(java32,"java_32.exe")
         print "Completed Java 32 bit Download"
         urllib.urlretrieve(java64,"java_64.exe")
