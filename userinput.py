@@ -1,7 +1,7 @@
 import webParse, downloads, time, compare, SilentInstall
 (version, arch) = SilentInstall.PlatformLookup().version_print()
 print "Current setup:\n","Version: Windows",version,"\nArch:",arch
-print "Choose an option:\n1: Check for updates\n2: Download and install updates\n3: Check and download updates (no install)"
+print "Choose an option:\n1: Check for updates (no write to file)\n2: Download and install updates\n3: Check and download updates (no install)"
 
 x = None
 while x != 'x':
