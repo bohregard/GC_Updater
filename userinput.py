@@ -1,5 +1,6 @@
 import webParse, downloads, time, compare, SilentInstall
-
+(version, arch) = SilentInstall.PlatformLookup().version_print()
+print "Current setup:\n","Version: Windows",version,"\nArch:",arch
 print "Choose an option:\n1: Check for updates\n2: Download and install updates\n3: Check and download updates (no install)"
 
 x = None
@@ -37,8 +38,6 @@ while x != 'x':
         (windows_txt,firefox_txt,java_txt) = textversion.version_print()
 
         compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt)
-        (version, arch) = SilentInstall.PlatformLookup().version_print()
-        print "Version:",version,"Arch:",arch
         
         if java != java_txt:
             SilentInstall.SilentInstallJava(arch)
