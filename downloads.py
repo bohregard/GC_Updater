@@ -64,8 +64,8 @@ class JavaDownload:
         urllib.urlretrieve(java32,"5 - Java_32.exe")
         print "Completed Java 32 bit Download"
         urllib.urlretrieve(java64,"5 - Java_64.exe")
-        copy.CopyFiles("5 - Java_32.exe")
-        copy.CopyFiles("5 - Java_64.exe")
+##        copy.CopyFiles("5 - Java_32.exe")
+##        copy.CopyFiles("5 - Java_64.exe")
 
 class WriteDownloadsFile:
 
