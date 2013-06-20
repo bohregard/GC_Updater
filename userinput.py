@@ -27,7 +27,7 @@ while x != 'x':
 
         compare.Compare(windows,windows_txt,firefox,firefox_txt,java,java_txt)
 
-        downloads.WriteDownloadsFile(windows,firefox,java)
+        #downloads.WriteDownloadsFile(windows,firefox,java)
         
         break
     elif x == '2':
