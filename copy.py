@@ -1,15 +1,17 @@
 import os,shutil
 
-##if __name__ == "__main__":
-##    config = {}
-##    execfile("config.conf",config)
-##
-##    dropbox = config["dropbox"]
-##    tools = config["techtool"]
 
-##class CopyFiles:
-##    def __init__(self,cpfile):
-##        print dropbox,'\n',tools
-##        shutil.copy(cpfile,dropbox)
 
-CopyFiles(Downloads.txt)
+class CopyFiles:
+    def __init__(self,cpfile):
+##        if __name__ == "__main__":
+##            config = {}
+##            execfile("config.conf",config)
+## 
+##            dropbox = config["dropbox"]
+##            tools = config["techtool"]
+        print "\nCopying "+cpfile+"...\n"
+        dropbox = "C:\Dropbox"
+        tools = "Technician Toolbox\Service Bundles\TuneUp - Vispy"
+        shutil.copy(cpfile,dropbox+'\\'+tools)
+        print "Copying of"+cpfile+"completed\n"

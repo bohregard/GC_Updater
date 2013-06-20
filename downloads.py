@@ -1,4 +1,4 @@
-import urllib2, urllib
+import urllib2, urllib, copy
 from bs4 import BeautifulSoup
 from selenium import webdriver  
 from selenium.common.exceptions import NoSuchElementException  
@@ -61,9 +61,11 @@ class JavaDownload:
             java32 = link.get('href')
         for link in soup.find_all(title='Download Java software for Windows (64-bit)'):
             java64 = link.get('href')
-        urllib.urlretrieve(java32,"java_32.exe")
+        urllib.urlretrieve(java32,"5 - Java_32.exe")
         print "Completed Java 32 bit Download"
-        urllib.urlretrieve(java64,"java_64.exe")
+        urllib.urlretrieve(java64,"5 - Java_64.exe")
+        copy.CopyFiles("5 - Java_32.exe")
+        copy.CopyFiles("5 - Java_64.exe")
 
 class WriteDownloadsFile:
 
