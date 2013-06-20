@@ -1,7 +1,8 @@
 import webParse, downloads, time, compare, SilentInstall
+
 (version, arch) = SilentInstall.PlatformLookup().version_print()
 print "Current setup:\n","Version: Windows",version,"\nArch:",arch
-print "Choose an option:\n1: Check for updates (no write to file)\n2: Download and install updates\n3: Check and download updates (drops in dropbox location; no install)"
+print "Choose an option:\n1: Check for updates (no write to file)\n2: Download and install updates\n3: Check and download updates (drops in dropbox location; no install)\n4: Check for SuperAnti-Spyware Update only"
 
 try:
     with open('Downloads.txt'):pass
@@ -29,7 +30,7 @@ while x != 'x':
 
         #downloads.WriteDownloadsFile(windows,firefox,java)
         
-        break
+        
     elif x == '2':
         print "Checking versions from web...\n"
         time.sleep(.5)
@@ -56,7 +57,7 @@ while x != 'x':
 
         downloads.WriteDownloadsFile(windows,firefox,java)
         
-        break
+
     elif x == '3':
         print "Checking versions from web...\n"
         time.sleep(.5)
@@ -74,8 +75,11 @@ while x != 'x':
         compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt)
 
         downloads.WriteDownloadsFile(windows,firefox,java)
+
+    elif x == '4':
+        print "Checking for SuperAnti-Spyware Update"
         
-        break
+
     elif x == 'x':
         break
     else:

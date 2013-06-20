@@ -1,5 +1,9 @@
-import urllib, downloads, time
-
+import urllib, downloads, time,sys
+def dlProgress(count, blockSize, totalSize):
+    percent = int(count*blockSize*100/totalSize)
+    sys.stdout.write("\r...%d%%" % percent)
+    sys.stdout.flush()
+    
 class DownloadFiles:
     def __init__(self, a,b,c,d,e,f):
         i = .5
@@ -9,7 +13,7 @@ class DownloadFiles:
             time.sleep(i)
         else:
             print "Downloading Flash for IE:"
-            urllib.urlretrieve("http://download.macromedia.com/pub/flashplayer/current/support/install_flash_player_ax.exe","Flash_Active_AX.exe")
+            urllib.urlretrieve("http://download.macromedia.com/pub/flashplayer/current/support/install_flash_player_ax.exe","Flash_Active_AX.exe", reporthook=dlProgress)
             print "Completed Flash for IE"
         #adobe firefox
         if c == d:
@@ -17,7 +21,7 @@ class DownloadFiles:
             time.sleep(i)
         else:
             print "Downloading Flash Plugin:"
-            urllib.urlretrieve("http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe", "Flash_Plugin.exe")
+            urllib.urlretrieve("http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe", "Flash_Plugin.exe", reporthook=dlProgress)
             print "Completed Flash Plugin"
         #Java
         if e == f:

@@ -1,4 +1,4 @@
-import urllib2, urllib, copy
+import urllib2, urllib, copy, sys
 from bs4 import BeautifulSoup
 from selenium import webdriver  
 from selenium.common.exceptions import NoSuchElementException  
@@ -7,7 +7,11 @@ from selenium.webdriver.common.keys import Keys
 ############################################
 #Checks Text file to begin version compares#
 ############################################
-
+def dlProgress(count, blockSize, totalSize):
+    percent = int(count*blockSize*100/totalSize)
+    sys.stdout.write("\r...%d%%" % percent)
+    sys.stdout.flush()
+        
 class Downloads:
     
     def __init__(self):
@@ -61,9 +65,9 @@ class JavaDownload:
             java32 = link.get('href')
         for link in soup.find_all(title='Download Java software for Windows (64-bit)'):
             java64 = link.get('href')
-        urllib.urlretrieve(java32,"5 - Java_32.exe")
+        urllib.urlretrieve(java32,"5 - Java_32.exe", reporthook=dlProgress)
         print "Completed Java 32 bit Download"
-        urllib.urlretrieve(java64,"5 - Java_64.exe")
+        urllib.urlretrieve(java64,"5 - Java_64.exe", reporthook=dlProgress)
 ##        copy.CopyFiles("5 - Java_32.exe")
 ##        copy.CopyFiles("5 - Java_64.exe")
 
