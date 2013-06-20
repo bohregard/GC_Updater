@@ -68,12 +68,12 @@ class JavaDownload:
 class WriteDownloadsFile:
 
     def __init__(self, a, b, c):
-        tobewritten = ['Windows:', a,'Firefox:',b,'Java:',c]
-        self = open('Downloads.txt', 'r+')
+        tobewritten = ['Windows:', a,'Firefox:',b,'Java:',c,'\n']
+        self = open('Downloads.txt', 'w')
         self.seek(0)
         for line in tobewritten:
             self.write(line + '\n')
         self.seek(0)
-        self.read()
+        #self.read()
         self.close
         return
