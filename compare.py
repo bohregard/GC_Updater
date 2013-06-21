@@ -34,7 +34,7 @@ class DownloadFiles:
         return
 
 class Compare:
-    def __init__(self, a,b,c,d,e,f):
+    def __init__(self, a,b,c,d,e,f,g,h,j,k):
         i = .5
         #adobe windows
         if a == b:
@@ -54,4 +54,15 @@ class Compare:
             time.sleep(i)
         else:
             print "Update available for Java"
+        #SAS
+        if g == h:
+            print "Match"
+            time.sleep(i)
+        else:
+            print "Update for SAS Core"
+        if j == k:
+            print "Match"
+            time.sleep(i)
+        else:
+            print "Update for SAS Trace"
         return

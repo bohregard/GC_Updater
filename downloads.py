@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 ############################################
 #Checks Text file to begin version compares#
 ############################################
+
 def dlProgress(count, blockSize, totalSize):
     percent = int(count*blockSize*100/totalSize)
     sys.stdout.write("\r...%d%%" % percent)
@@ -17,7 +18,7 @@ class Downloads:
     def __init__(self):
         return
 
-    def version_find(self, windows, firefox, java):
+    def version_find(self, windows, firefox, java, core, trace):
         self = open('Downloads.txt', 'r')
         lines = []
         lines[:] = range(0,20)
@@ -39,17 +40,25 @@ class Downloads:
             if lines[i] == "Java:\n":
                 java = lines[i+1]
                 java = java.rstrip('\n')
+            if lines[i] == "SAS Core:\n":
+                core = lines[i+1]
+                core = core.rstrip('\n')
+            if lines[i] == "SAS Trace:\n":
+                trace = lines[i+1]
+                trace = trace.rstrip('\n')
             i += 1
         self.close
-        return windows, firefox, java
+        return windows, firefox, java, core, trace
 
     def version_print(self):
         windows = ""
         firefox = ""
         java = ""
-        (windows, firefox, java) = self.version_find(windows, firefox, java)
+        trace = ""
+        core = ""
+        (windows, firefox, java, core, trace) = self.version_find(windows, firefox, java, core, trace)
         #print "Windows:", windows, "Firefox:", firefox
-        return windows, firefox, java
+        return windows, firefox, java, core, trace
 
 class JavaDownload:
     def __init__(self):
@@ -73,8 +82,8 @@ class JavaDownload:
 
 class WriteDownloadsFile:
 
-    def __init__(self, a, b, c):
-        tobewritten = ['Windows:', a,'Firefox:',b,'Java:',c,'\n']
+    def __init__(self, a, b, c,d,e):
+        tobewritten = ['Windows:', a,'Firefox:',b,'Java:',c,'SAS Core:',d,'SAS Trace:',e,'\n']
         self = open('Downloads.txt', 'w')
         self.seek(0)
         for line in tobewritten:
