@@ -1,19 +1,27 @@
 import webParse, downloads, time, compare, SilentInstall
 
+#Global Variabls
+globstar = 70
+
+#Begin Version Check
+
 (version, arch) = SilentInstall.PlatformLookup().version_print()
-print "Current setup:\n","Version: Windows",version,"\nArch:",arch
-print "Choose an option:\n1: Check for updates (no write to file)\n2: Download and install updates\n3: Check and download updates (drops in dropbox location; no install)\n4: Check for SuperAnti-Spyware Update"
+print "*"*globstar,"\nCurrent setup:\n","Version: Windows",version,"\nArch:",arch,"\n","*"*globstar
+
+#Begin Main Program
+
+print "\nChoose an option:\n1: Check for updates (no write to file)\n2: Download and install updates\n3: Check and download updates (drops in dropbox location; no install)\n4: Check for SuperAnti-Spyware Update"
 
 try:
     with open('Downloads.txt'):pass
 except IOError:
-    downloads.WriteDownloadsFile('','','','','')
+    downloads.WriteDownloadsFile('','','','','','')
 
 x = None
 while x != 'x':
-    x = raw_input('Enter an option (x to exit): ')
+    x = raw_input('\nEnter an option (x to exit): ')
     if x == '1':
-        print "Checking versions from web...\n"
+        print "\nChecking versions from web...\n"
         time.sleep(.5)
         adobeupdate = webParse.AdobeUpdater()
         (windows, firefox) = adobeupdate.adobe_version()
@@ -23,47 +31,34 @@ while x != 'x':
 
         (core,trace) = webParse.SuperAntiUpdater().sas_check()
 
+        cleaner = webParse.CCleanerUpdater().clean_check()
+
         print "Comparing versions...\n"
         time.sleep(.5)
         textversion = downloads.Downloads()
-        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt) = textversion.version_print()
+        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt, cleaner_txt) = textversion.version_print()
 
-        compare.Compare(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
+        print "*"*globstar,"\nAdobe Versions:",windows,"and",firefox,"\n","*"*globstar
+        compare.CompAdobe().comp(windows,windows_txt,firefox,firefox_txt)
 
-        #downloads.WriteDownloadsFile(windows,firefox,java)
+        print "*"*globstar,"\nJava Version:",java,"\n","*"*globstar
+        compare.CompJava().comp(java,java_txt)
+
+        print "*"*globstar,"\nSAS Versions: Core:",core,"Trace:",trace,"\n","*"*globstar
+        compare.CompSAS().comp(core,core_txt,trace,trace_txt)
+        
+        print "*"*globstar,"\nCCleaner Versions: ",cleaner,"\n","*"*globstar
+        compare.CompCleaner().comp(cleaner, cleaner_txt)
+        
+
         
         
     elif x == '2':
-        print "Checking versions from web...\n"
-        time.sleep(.5)
-        adobeupdate = webParse.AdobeUpdater()
-        (windows, firefox) = adobeupdate.adobe_version()
-
-        javaupdate = webParse.JavaUpdater()
-        (java) = javaupdate.java_check()
-
-        (core,trace) = webParse.SuperAntiUpdater().sas_check()
-
-        print "Comparing versions...\n"
-        time.sleep(.5)
-        textversion = downloads.Downloads()
-        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt) = textversion.version_print()
-
-        Downloads = compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
-        
-        if java != java_txt:
-            SilentInstall.SilentInstallJava(arch)
-        else:
-            print "Java already installed and up-to-date"
-
-        if windows != windows_txt:
-            SilentInstall.SilentInstallAdobe(version)
-
-        downloads.WriteDownloadsFile(windows,firefox,java, core, trace)
+        print "\nPlace holder for future silent install option"
         
 
     elif x == '3':
-        print "Checking versions from web...\n"
+        print "\nChecking versions from web...\n"
         time.sleep(.5)
         adobeupdate = webParse.AdobeUpdater()
         (windows, firefox) = adobeupdate.adobe_version()
@@ -73,14 +68,26 @@ while x != 'x':
 
         (core,trace) = webParse.SuperAntiUpdater().sas_check()
 
+        cleaner = webParse.CCleanerUpdater().clean_check()
+
         print "Comparing versions...\n"
         time.sleep(.5)
         textversion = downloads.Downloads()
-        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt) = textversion.version_print()
-        
-        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
+        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt, cleaner_txt) = textversion.version_print()
 
-        downloads.WriteDownloadsFile(windows,firefox,java,core,trace)
+        print "*"*globstar,"\nAdobe Versions:",windows,"and",firefox,"\n","*"*globstar
+        compare.CompAdobe().download(windows,windows_txt,firefox,firefox_txt)
+
+        print "*"*globstar,"\nJava Version:",java,"\n","*"*globstar
+        compare.CompJava().download(java,java_txt)
+
+        print "*"*globstar,"\nSAS Versions: Core:",core,"Trace:",trace,"\n","*"*globstar
+        compare.CompSAS().download(core,core_txt,trace,trace_txt)
+
+        print "*"*globstar,"\nCCleaner Versions: ",cleaner,"\n","*"*globstar
+        compare.CompCleaner().download(cleaner, cleaner_txt)
+
+        downloads.WriteDownloadsFile(windows,firefox,java,core,trace, cleaner)
 
     elif x == '4':
         print "Checking for SuperAnti-Spyware Update"

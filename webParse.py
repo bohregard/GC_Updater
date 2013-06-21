@@ -1,6 +1,11 @@
-import urllib, urllib2
+import urllib, urllib2, zipfile, sys, os
 from bs4 import BeautifulSoup
 
+def dlProgress(count, blockSize, totalSize):
+    percent = int(count*blockSize*100/totalSize)
+    sys.stdout.write("\r...%d%%" % percent)
+    sys.stdout.flush()
+    
 class AdobeUpdater:
     def __init__(self):
         return
@@ -52,4 +57,29 @@ class SuperAntiUpdater:
                 trace_Def = td_tag[i+1].get_text()
         #print "Core Definitions:",core_Def,"\nTrace Defintions:",trace_Def
         return core_Def, trace_Def
-(a,b) = SuperAntiUpdater().sas_check()
+
+class CCleanerUpdater:
+    def clean_check(self):
+        
+        url = "http://www.piriform.com/ccleaner/builds"
+        html = urllib2.urlopen(url)
+        soup = BeautifulSoup(html)
+        divtag = soup.find_all('div')
+        font = soup.find_all('font')
+        for i in range(len(divtag)):
+            divtag[i] = divtag[i].get_text().split('\n')
+        for i in range(len(divtag)):
+            for j in range(len(divtag[i])):
+                divtag[i][j] = divtag[i][j].strip(' -')
+        return divtag[25][3] #version
+    
+    def clean_down(self):
+        downurl = "http://www.piriform.com/ccleaner/download/portable//downloadfile"
+        urllib.urlretrieve(downurl,'Ccleaner.zip', reporthook=dlProgress)
+        zipfile.ZipFile('Ccleaner.zip').extract('CCleaner.exe')
+        os.rename('CCleaner.exe', '2 - CCleaner (32).exe')
+        zipfile.ZipFile('Ccleaner.zip').extract('CCleaner64.exe')
+        os.rename('CCleaner64.exe', '2 - CCleaner (64).exe')
+        zipfile.ZipFile('Ccleaner.zip').close()
+        os.remove('Ccleaner.zip')
+        return

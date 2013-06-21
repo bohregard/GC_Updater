@@ -18,7 +18,7 @@ class Downloads:
     def __init__(self):
         return
 
-    def version_find(self, windows, firefox, java, core, trace):
+    def version_find(self, windows, firefox, java, core, trace,cleaner):
         self = open('Downloads.txt', 'r')
         lines = []
         lines[:] = range(0,20)
@@ -46,9 +46,12 @@ class Downloads:
             if lines[i] == "SAS Trace:\n":
                 trace = lines[i+1]
                 trace = trace.rstrip('\n')
+            if lines[i] == "CCleaner:\n":
+                cleaner = lines[i+1]
+                cleaner = cleaner.rstrip('\n')
             i += 1
         self.close
-        return windows, firefox, java, core, trace
+        return windows, firefox, java, core, trace, cleaner
 
     def version_print(self):
         windows = ""
@@ -56,9 +59,10 @@ class Downloads:
         java = ""
         trace = ""
         core = ""
-        (windows, firefox, java, core, trace) = self.version_find(windows, firefox, java, core, trace)
+        cleaner = ""
+        (windows, firefox, java, core, trace, cleaner) = self.version_find(windows, firefox, java, core, trace, cleaner)
         #print "Windows:", windows, "Firefox:", firefox
-        return windows, firefox, java, core, trace
+        return windows, firefox, java, core, trace, cleaner
 
 class JavaDownload:
     def __init__(self):
@@ -92,8 +96,8 @@ class SuperDownload:
 
 class WriteDownloadsFile:
 
-    def __init__(self, a, b, c,d,e):
-        tobewritten = ['Windows:', a,'Firefox:',b,'Java:',c,'SAS Core:',d,'SAS Trace:',e,'\n']
+    def __init__(self, a, b, c,d,e,f):
+        tobewritten = ['Windows:', a,'Firefox:',b,'Java:',c,'SAS Core:',d,'SAS Trace:',e,'CCleaner:',f,'\n']
         self = open('Downloads.txt', 'w')
         self.seek(0)
         for line in tobewritten:
