@@ -83,8 +83,11 @@ class JavaDownload:
 
 class SuperDownload:
     def __init__(self):
-        sasfile='http://www.superantispyware.com/downloads/temp/SAS_733093B.COM'
-        urllib.urlretrieve(sasfile,"SAS.com",reporthook=dlProgress)
+        try:
+            sasfile='http://www.superantispyware.com/downloads/temp/SAS_733093B.COM'
+            urllib.urlretrieve(sasfile,"SAS.com",reporthook=dlProgress)
+        except:
+            print "File could not be downloaded"
         return
 
 class WriteDownloadsFile:
