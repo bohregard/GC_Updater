@@ -42,12 +42,14 @@ while x != 'x':
         javaupdate = webParse.JavaUpdater()
         (java) = javaupdate.java_check()
 
+        (core,trace) = webParse.SuperAntiUpdater().sas_check()
+
         print "Comparing versions...\n"
         time.sleep(.5)
         textversion = downloads.Downloads()
-        (windows_txt,firefox_txt,java_txt) = textversion.version_print()
+        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt) = textversion.version_print()
 
-        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt)
+        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
         
         if java != java_txt:
             SilentInstall.SilentInstallJava(arch)
@@ -57,7 +59,7 @@ while x != 'x':
         if windows != windows_txt:
             SilentInstall.SilentInstallAdobe(version)
 
-        downloads.WriteDownloadsFile(windows,firefox,java)
+        downloads.WriteDownloadsFile(windows,firefox,java, core, trace)
         
 
     elif x == '3':
@@ -69,14 +71,16 @@ while x != 'x':
         javaupdate = webParse.JavaUpdater()
         (java) = javaupdate.java_check()
 
+        (core,trace) = webParse.SuperAntiUpdater().sas_check()
+
         print "Comparing versions...\n"
         time.sleep(.5)
         textversion = downloads.Downloads()
-        (windows_txt,firefox_txt,java_txt) = textversion.version_print()
+        (windows_txt,firefox_txt,java_txt, core_txt, trace_txt) = textversion.version_print()
         
-        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt)
+        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
 
-        downloads.WriteDownloadsFile(windows,firefox,java)
+        downloads.WriteDownloadsFile(windows,firefox,java,core,trace)
 
     elif x == '4':
         print "Checking for SuperAnti-Spyware Update"

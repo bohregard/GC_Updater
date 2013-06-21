@@ -4,5 +4,9 @@ Firefox:
 11.7.700.224
 Java:
 Recommended Version 7 Update 25 (filesize:  862 KB)
+SAS Core:
+10549
+SAS Trace:
+8361
 
 

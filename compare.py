@@ -5,32 +5,39 @@ def dlProgress(count, blockSize, totalSize):
     sys.stdout.flush()
     
 class DownloadFiles:
-    def __init__(self, a,b,c,d,e,f):
+    def __init__(self, a,b,c,d,e,f,g,h,j,k):
         i = .5
         #adobe windows
         if a == b:
-            print "Match"
+            print "Adobe AX: Match"
             time.sleep(i)
         else:
-            print "Downloading Flash for IE:"
+            print "Adobe AX: Mismatch\nDownloading Flash for IE:"
             urllib.urlretrieve("http://download.macromedia.com/pub/flashplayer/current/support/install_flash_player_ax.exe","Flash_Active_AX.exe", reporthook=dlProgress)
-            print "Completed Flash for IE"
+            print "\nCompleted Flash for IE"
         #adobe firefox
         if c == d:
-            print "Match"
+            print "Adobe Plugin: Match"
             time.sleep(i)
         else:
-            print "Downloading Flash Plugin:"
+            print "Adobe Plugin: Mismatch\nDownloading Flash Plugin:"
             urllib.urlretrieve("http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe", "Flash_Plugin.exe", reporthook=dlProgress)
-            print "Completed Flash Plugin"
+            print "\nCompleted Flash Plugin"
         #Java
         if e == f:
-            print "Match"
+            print "Java: Match"
             time.sleep(i)
         else:
-            print "Downloading Java 32 and 64 bit:"
+            print "Java: Mismatch\nDownloading Java 32 and 64 bit:"
             downloads.JavaDownload()
-            print "Completed Java 32 and 64 bit"
+            print "\nCompleted Java 32 and 64 bit"
+        if g == h and j == k:
+            print "SuperAntiSpyware: Match"
+            time.sleep(i)
+        else:
+            print "SuperAntiSpyware: Mismatch\nDownloading SuperAntiSpyware:"
+            downloads.SuperDownload()
+            print "\nCompleted SuperAntiSpyware"
         return
 
 class Compare:

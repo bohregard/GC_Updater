@@ -75,10 +75,17 @@ class JavaDownload:
         for link in soup.find_all(title='Download Java software for Windows (64-bit)'):
             java64 = link.get('href')
         urllib.urlretrieve(java32,"5 - Java_32.exe", reporthook=dlProgress)
-        print "Completed Java 32 bit Download"
+        print "\nCompleted Java 32 bit Download"
         urllib.urlretrieve(java64,"5 - Java_64.exe", reporthook=dlProgress)
 ##        copy.CopyFiles("5 - Java_32.exe")
 ##        copy.CopyFiles("5 - Java_64.exe")
+        return
+
+class SuperDownload:
+    def __init__(self):
+        sasfile='http://www.superantispyware.com/downloads/temp/SAS_733093B.COM'
+        urllib.urlretrieve(sasfile,"SAS.com",reporthook=dlProgress)
+        return
 
 class WriteDownloadsFile:
 
