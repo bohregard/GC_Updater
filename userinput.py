@@ -49,7 +49,7 @@ while x != 'x':
         textversion = downloads.Downloads()
         (windows_txt,firefox_txt,java_txt, core_txt, trace_txt) = textversion.version_print()
 
-        compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
+        Downloads = compare.DownloadFiles(windows,windows_txt,firefox,firefox_txt,java,java_txt, core,core_txt,trace,trace_txt)
         
         if java != java_txt:
             SilentInstall.SilentInstallJava(arch)
