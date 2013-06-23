@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 def dlProgress(count, blockSize, totalSize):
     percent = int(count*blockSize*100/totalSize)
-    sys.stdout.write("\r...%d%%" % percent)
+    sys.stdout.write("\rDownload:...%d%%" % percent)
     sys.stdout.flush()
     
 class AdobeUpdater:
@@ -77,9 +77,9 @@ class CCleanerUpdater:
         downurl = "http://www.piriform.com/ccleaner/download/portable//downloadfile"
         urllib.urlretrieve(downurl,'Ccleaner.zip', reporthook=dlProgress)
         zipfile.ZipFile('Ccleaner.zip').extract('CCleaner.exe')
-        os.rename('CCleaner.exe', '2 - CCleaner (32).exe')
+        os.rename('CCleaner.exe', '2 - CCleaner (32bit).exe')
         zipfile.ZipFile('Ccleaner.zip').extract('CCleaner64.exe')
-        os.rename('CCleaner64.exe', '2 - CCleaner (64).exe')
+        os.rename('CCleaner64.exe', '2 - CCleaner (64bit).exe')
         zipfile.ZipFile('Ccleaner.zip').close()
         os.remove('Ccleaner.zip')
         return

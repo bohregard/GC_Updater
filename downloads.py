@@ -10,7 +10,7 @@ from selenium.webdriver.common.keys import Keys
 
 def dlProgress(count, blockSize, totalSize):
     percent = int(count*blockSize*100/totalSize)
-    sys.stdout.write("\r...%d%%" % percent)
+    sys.stdout.write("\rDownload...%d%%" % percent)
     sys.stdout.flush()
         
 class Downloads:
@@ -92,7 +92,7 @@ class SuperDownload:
         test = urllib2.urlopen(req)
         sas_size = test.headers["Content-Length"]
         sas_size = int(sas_size)
-        with open(os.path.basename('3 - SuperAntiSpyware.COM'), "wb") as local_file:
+        with open(os.path.basename('3 - Super Anti Spyware.COM'), "wb") as local_file:
             print "Downloading"
             local_file.write(test.read())
             print "Complete"
