@@ -1,4 +1,4 @@
-import urllib2, urllib, copy, sys
+import urllib2, urllib, sys, os
 from bs4 import BeautifulSoup
 from selenium import webdriver  
 from selenium.common.exceptions import NoSuchElementException  
@@ -81,17 +81,21 @@ class JavaDownload:
         urllib.urlretrieve(java32,"5 - Java_32.exe", reporthook=dlProgress)
         print "\nCompleted Java 32 bit Download"
         urllib.urlretrieve(java64,"5 - Java_64.exe", reporthook=dlProgress)
-##        copy.CopyFiles("5 - Java_32.exe")
-##        copy.CopyFiles("5 - Java_64.exe")
         return
 
 class SuperDownload:
     def __init__(self):
-        try:
-            sasfile='http://www.superantispyware.com/downloads/temp/SAS_733093B.COM'
-            urllib.urlretrieve(sasfile,"SAS.com",reporthook=dlProgress)
-        except:
-            print "File could not be downloaded"
+        sas = 'http://www.superantispyware.com/sasportable.php'
+        headers = { 'Referer' : 'http://www.superantispyware.com/portablescannertech.html'}
+        data = ''
+        req = urllib2.Request(sas,data,headers)
+        test = urllib2.urlopen(req)
+        sas_size = test.headers["Content-Length"]
+        sas_size = int(sas_size)
+        with open(os.path.basename('3 - SuperAntiSpyware.COM'), "wb") as local_file:
+            print "Downloading"
+            local_file.write(test.read())
+            print "Complete"
         return
 
 class WriteDownloadsFile:

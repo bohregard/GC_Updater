@@ -1,4 +1,4 @@
-import urllib, downloads, time,sys, webParse
+import urllib, downloads, time,sys, webParse, copy
 
 def dlProgress(count, blockSize, totalSize):
     percent = int(count*blockSize*100/totalSize)
@@ -27,7 +27,8 @@ class CompAdobe:
             time.sleep(i)
         else:
             print "Adobe AX: Mismatch\nDownloading Flash for IE:"
-            urllib.urlretrieve("http://download.macromedia.com/pub/flashplayer/current/support/install_flash_player_ax.exe","Flash_Active_AX.exe", reporthook=dlProgress)
+            urllib.urlretrieve("http://download.macromedia.com/pub/flashplayer/current/support/install_flash_player_ax.exe","4 - Flash_Active_AX.exe", reporthook=dlProgress)
+            copy.CopyFiles('4 - Flash_Active_AX.exe')
             print "\nCompleted Flash for IE"
         #adobe firefox
         if c == d:
@@ -35,7 +36,8 @@ class CompAdobe:
             time.sleep(i)
         else:
             print "Adobe Plugin: Mismatch\nDownloading Flash Plugin:"
-            urllib.urlretrieve("http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe", "Flash_Plugin.exe", reporthook=dlProgress)
+            urllib.urlretrieve("http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_11_plugin.exe", "4 - Flash_Plugin.exe", reporthook=dlProgress)
+            copy.CopyFiles('4 - Flash_Plugin.exe')
             print "\nCompleted Flash Plugin"
             
 class CompJava:
@@ -54,6 +56,8 @@ class CompJava:
         else:
             print "Java: Mismatch\nDownloading Java 32 and 64 bit:"
             downloads.JavaDownload()
+            copy.CopyFiles("5 - Java_32.exe")
+            copy.CopyFiles("5 - Java_64.exe")
             print "\nCompleted Java 32 and 64 bit"
             
 class CompSAS:
@@ -71,6 +75,7 @@ class CompSAS:
         else:
             print "SuperAntiSpyware: Mismatch\nDownloading SuperAntiSpyware:"
             downloads.SuperDownload()
+            copy.CopyFiles('3 - SuperAntiSpyware.COM')
             print "\nCompleted SuperAntiSpyware"
             
 class CompCleaner:
@@ -86,5 +91,7 @@ class CompCleaner:
         else:
             print "CCleaner: Mismatch\nDownoading CCleaner:"
             webParse.CCleanerUpdater().clean_down()
+            copy.CopyFiles('2 - CCleaner (64).exe')
+            copy.CopyFiles('2 - CCleaner (32).exe')
             print "\nCompleted CCleaner"
         return

@@ -1,4 +1,4 @@
-import urllib, urllib2, zipfile, sys, os
+import urllib, urllib2, zipfile, sys, os, copy
 from bs4 import BeautifulSoup
 
 def dlProgress(count, blockSize, totalSize):

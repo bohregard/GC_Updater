@@ -4,8 +4,9 @@ class CopyFiles:
     def __init__(self,cpfile):
         print "\nCopying "+cpfile+"...\n"
         #Value needs to be edited.
-        dropbox = "C:\Dropbox"
+        dropbox = "Downloads"
         #End edit
-        tools = "Technician Toolbox\Service Bundles\TuneUp - Vispy"
+        tools = "TechToolbox"
         shutil.copy(cpfile,dropbox+'\\'+tools)
-        print "Copying of "+cpfile+"completed\n"
+        os.remove(cpfile)
+        print "Copying of "+cpfile+" completed\n"
