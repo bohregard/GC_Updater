@@ -1,4 +1,10 @@
-import webParse, downloads, time, compare, SilentInstall
+import webParse, downloads, time, compare, SilentInstall,sys
+
+#Command Line Arguments
+print 'Number of arguments:',len(sys.argv), 'Arguments.'
+print 'Argument List:', str(sys.argv)
+for i in range(len(sys.argv)):
+    print "sys.argv[",i,"] = ",sys.argv[i]
 
 #Global Variabls
 globstar = 70
