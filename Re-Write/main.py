@@ -17,11 +17,11 @@ exit_now = False
 
 #File check
 try:
-    with open('Downloads.txt','r') as f:
+    with open('Downloads.db','r') as f:
         var = f.read()
 except IOError:
     print "Read failed, generating new file..."
-    with open('Downloads.txt','w') as f:
+    with open('Downloads.db','w') as f:
         tobewritten = ['Adobe Windows:','','Adobe Plugin:','','Java:','','SAS Core:','','SAS Trace:','']
         for line in tobewritten:
             f.write(line+'\n')
