@@ -1,10 +1,15 @@
-import os,shutil
+import os,shutil,base64
 
 class CopyFiles:
     def __init__(self,cpfile):
         
         #Value needs to be edited.
-        dropbox = "C:\Dropbox"
+        APPDATA = os.environ['APPDATA']
+        dropdb = open(APPDATA + '\\Dropbox\\host.db', 'r+')
+        coded_string = dropdb.read()
+        dropbox = coded_string.lstrip('0')
+        dropdb.close()
+        dropbox = base64.b64decode(dropbox)
         tools = "Technician Toolbox\Service Bundles\TuneUp - Vispy"
         virus = "\Technician Toolbox\Virus and Spyware Removal"
         #End edit
