@@ -57,7 +57,7 @@ except:
     print stars
     print "* Archetype:",arch,"\n* Windows",win
     print "* Re-Write: Genius Connect Updater Version 1.2\n* This will include the ability to \"Silently\" install files in the background\n* for users"
-    print "* Arugments called:",sys.argv
+    print "* Arugments available: -u,-c,-s, -h for more info."
     print stars,"\n"
     x = raw_input("Enter an option:")
 
