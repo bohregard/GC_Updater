@@ -1,12 +1,6 @@
-import urllib, urllib2, zipfile, sys, os, copy
 from bs4 import BeautifulSoup
 
 #Global Definitions
-
-def dlProgress(count, blockSize, totalSize):
-    percent = int(count*blockSize*100/totalSize)
-    sys.stdout.write("\rDownload:...%d%%" % percent)
-    sys.stdout.flush()
 
 #Adobe
 
@@ -15,21 +9,7 @@ class AdobeUpdater:
         return
 
     def adobe_version(self):
-        #Open url and find td tags containing versions
-        url = urllib2.urlopen("http://www.adobe.com/software/flash/about/")
-        html = url.read()
-        soup = BeautifulSoup(html)
-        td_tag = soup.find_all('td')
-
-        iTerator = []
-        iTerator[:] = range(2,16)
-
-        for i in iTerator:
-            if i == 2:
-                windows = td_tag[i].get_text()
-            if i == 6:
-                plugin = td_tag[i].get_text()
-        return windows, plugin
+        return
 
 #java
 
@@ -37,3 +17,19 @@ class AdobeUpdater:
 
 #Ccleaner
 
+class Updater:
+    def __init__(self):
+        return
+    def web_update(self):
+        with open('downloads.html','r') as f:
+            read = f.read()
+
+        html = BeautifulSoup(read)
+        p = html.find_all('p')
+        for i in range(len(p)):
+            p[i] = p[i].get_text()
+            p[i] = p[i].strip('JavaAdobePluginActiveXSASCoreTraceCcleaner: ')
+
+        for line in p:
+            print line
+        return p
