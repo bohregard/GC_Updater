@@ -1,3 +1,4 @@
+import urllib2
 from bs4 import BeautifulSoup
 
 #Global Definitions
@@ -30,6 +31,9 @@ class Updater:
             p[i] = p[i].get_text()
             p[i] = p[i].strip('JavaAdobePluginActiveXSASCoreTraceCcleaner: ')
 
-        for line in p:
-            print line
+##        for line in p:
+##            print line
         return p
+
+(java,win,plugin,trace,core,cleaner) = Updater().web_update()
+

@@ -5,9 +5,9 @@ Firefox:
 Java:
 Recommended Version 7 Update 25 (filesize:  861 KB)
 SAS Core:
-10568
+10571
 SAS Trace:
-8380
+8383
 CCleaner:
 ccsetup403.zip
 

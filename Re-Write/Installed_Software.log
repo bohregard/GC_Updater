@@ -1,149 +1,137 @@
 ********************************************************************************
-64-Bit Software Installed
-********************************************************************************
-
-Display Name: AddressBook; Version: Null
-Display Name: CCleaner; Version: 4.02
-Display Name: Connection Manager; Version: Null
-Display Name: DirectDrawEx; Version: Null
-Display Name: DXM_Runtime; Version: Null
-Display Name: Windows Driver Package - Nokia pccsmcfd  (08/22/2008 7.0.0.0); Version: 08/22/2008 7.0.0.0
-Display Name: Fontcore; Version: Null
-Display Name: IE40; Version: Null
-Display Name: IE4Data; Version: Null
-Display Name: IE5BAKEX; Version: Null
-Display Name: IEData; Version: Null
-Display Name: Python 2.7 lxml-3.2.1 (64-bit); Version: Null
-Display Name: MobileOptionPack; Version: Null
-Display Name: MPlayer2; Version: Null
-Display Name: NVIDIA Drivers; Version: Null
-Display Name: Python 2.7 pip-1.3.1 (64-bit); Version: Null
-Display Name: Intel(R) Network Connections 17.1.50.0; Version: 17.1.50.0
-Display Name: Python 2.7 pywin32-218; Version: Null
-Display Name: SchedulingAgent; Version: Null
-Display Name: WIC; Version: Null
-Display Name: WinRAR 4.20 (64-bit); Version: 4.20.0
-Display Name: x64 Components v4.1.2; Version: 4.1.2
-Display Name: Native Instruments Guitar Rig 5; Version: 5.1.0.2641
-Display Name: Native Instruments Controller Editor; Version: 1.4.3.891
-Display Name: Native Instruments Service Center; Version: 2.3.2.926
-Display Name: Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219; Version: 10.0.40219
-Display Name: Java(TM) 6 Update 45 (64-bit); Version: 6.0.450
-Display Name: Java 7 Update 21 (64-bit); Version: 7.0.210
-Display Name: MotioninJoy Gamepad tool 0.7.1001; Version: 0.7.1001
-Display Name: Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022; Version: 9.0.21022
-Display Name: M-Audio FireWire Driver 6.0.1 (x64); Version: 6.0.1
-Display Name: Intel(R) Network Connections 17.1.50.0; Version: 17.1.50.0
-Display Name: {54F2237F-018C-483B-8884-9FC0D88840C3}; Version: 1.02.0000
-Display Name: Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161; Version: 9.0.30729.6161
-Display Name: Java SE Development Kit 7 Update 21 (64-bit); Version: 1.7.0.210
-Display Name: Intel® Hardware Accelerated Execution Manager; Version: 1.0.6
-Display Name: Python 2.7.4 (64-bit); Version: 2.7.4150
-Display Name: Microsoft Silverlight; Version: 5.1.20125.0
-Display Name: NVIDIA 3D Vision Driver 314.22; Version: 314.22
-Display Name: NVIDIA Control Panel 314.22; Version: 314.22
-Display Name: NVIDIA Graphics Driver 314.22; Version: 314.22
-Display Name: NVIDIA 3D Vision Controller Driver 314.22; Version: 314.22
-Display Name: NVIDIA PhysX System Software 9.12.1031; Version: 9.12.1031
-Display Name: NVIDIA Update 1.12.12; Version: 1.12.12
-Display Name: NVIDIA Install Application; Version: 2.1002.115.743
-Display Name: NVIDIA Update Components; Version: 1.12.12
-Display Name: Intel® Trusted Connect Service Client; Version: 1.24.388.1
-Display Name: TightVNC; Version: 2.7.1.0
-
-
-********************************************************************************
 32-Bit Software Installed
 ********************************************************************************
 
 Display Name: AddressBook; Version: Null
-Display Name: Adobe AIR; Version: 3.7.0.1860
-Display Name: Adobe Flash Player 11 Plugin; Version: 11.7.700.224
+Display Name: Adobe AIR; Version: 3.7.0.2090
+Display Name: Adobe Flash Player 11 ActiveX; Version: 11.7.700.224
 Display Name: Adobe Shockwave Player 12.0; Version: 12.0.2.122
-Display Name: Android Studio; Version: 1.0
-Display Name: Audacity 2.0.3; Version: 2.0.3
 Display Name: Connection Manager; Version: Null
 Display Name: DirectDrawEx; Version: Null
-Display Name: DXM_Runtime; Version: Null
-Display Name: FileZilla Server; Version: beta 0.9.41
 Display Name: Fontcore; Version: Null
-Display Name: foobar2000 v1.2.6; Version: 1.2.6
-Display Name: Git version 1.8.1.2-preview20130201; Version: 1.8.1.2-preview20130201
-Display Name: Google Chrome; Version: 28.0.1500.52
-Display Name: PHANTASY STAR ONLINE 2; Version: Null
+Display Name: Git version 1.8.3-preview20130601; Version: 1.8.3-preview20130601
 Display Name: IE40; Version: Null
 Display Name: IE4Data; Version: Null
 Display Name: IE5BAKEX; Version: Null
 Display Name: IEData; Version: Null
-Display Name: InstallShield Uninstall Information; Version: Null
-Display Name: NVIDIA nTune; Version: 1.00.0000
-Display Name: MagicDisc 2.7.106; Version: Null
-Display Name: mIRC; Version: 7.32
 Display Name: MobileOptionPack; Version: Null
-Display Name: Mozilla Thunderbird 17.0.6 (x86 en-US); Version: 17.0.6
-Display Name: Mozilla Maintenance Service; Version: 17.0.6
-Display Name: MPlayer2; Version: Null
-Display Name: Native Instruments Controller Editor; Version: Null
-Display Name: Native Instruments Guitar Rig 5; Version: Null
-Display Name: Native Instruments Service Center; Version: Null
-Display Name: NVIDIA Stereoscopic 3D Driver; Version: 7.17.13.1422
-Display Name: PowerISO; Version: 5.6
-Display Name: RollerCoaster Tycoon 2 Triple Thrill Pack; Version: Null
-Display Name: RollerCoaster Tycoon 3 Platinum; Version: 3
-Display Name: SABnzbd 0.7.11; Version: 0.7.11
+Display Name: Mozilla Firefox 21.0 (x86 en-US); Version: 21.0
+Display Name: Mozilla Maintenance Service; Version: 21.0
+Display Name: NVIDIA Stereoscopic 3D Driver; Version: 7.17.13.1106
+Display Name: PhraseExpander 3.8.5.0; Version: Null
 Display Name: SchedulingAgent; Version: Null
-Display Name: SpeedFan (remove only); Version: Null
-Display Name: Rochard; Version: Null
-Display Name: Cave Story+; Version: Null
-Display Name: Metro 2033; Version: Null
-Display Name: Sid Meier's Civilization V; Version: Null
-Display Name: µTorrent; Version: 3.3.0.29625
-Display Name: VLC media player 2.0.6; Version: 2.0.6
 Display Name: WIC; Version: Null
-Display Name: {01D57CF6-B5BC-4D03-AFF5-7960CFBD05A9}; Version: Null
-Display Name: Steam; Version: 1.0.0.0
-Display Name: {0886900B-B2F3-452C-B580-60F1253F7F80}; Version: Null
-Display Name: {0B8565BA-BAD5-4732-B122-5FD78EFC50A9}; Version: Null
-Display Name: Skype™ 6.3; Version: 6.3.107
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB2151757; Version: Null
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB2467173; Version: Null
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB2524860; Version: Null
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB2544655; Version: Null
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB2549743; Version: Null
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB2565063; Version: Null
-Display Name: {1D8E6291-B0D5-35EC-8441-6616F567A0F7}.KB982573; Version: Null
-Display Name: Java(TM) 6 Update 45; Version: 6.0.450
+Display Name: Windows Live Essentials; Version: 16.4.3505.0912
+Display Name: Windows Live Communications Platform; Version: 16.4.3505.0912
+Display Name: Windows Live UX Platform Language Pack; Version: 16.4.3505.0912
+Display Name: Skype™ 6.5; Version: 6.5.158
+Display Name: Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319; Version: 10.0.30319
+Display Name: {196BB40D-1578-3D01-B289-BEFC77A11A1E}.KB2151757; Version: Null
+Display Name: {196BB40D-1578-3D01-B289-BEFC77A11A1E}.KB982573; Version: Null
+Display Name: SupportSpace Support Platform; Version: 14.0.0.0
+Display Name: Windows Live Writer Resources; Version: 16.4.3505.0912
+Display Name: Intel(R) USB 3.0 eXtensible Host Controller Driver; Version: 1.0.4.220
 Display Name: Java 7 Update 25; Version: 7.0.250
-Display Name: {27735B09-9EFE-419F-A377-10AA8111C30A}; Version: 1.01.0000
-Display Name: Java SE Development Kit 7 Update 21; Version: 1.7.0.210
-Display Name: AI Suite II; Version: 2.00.05
-Display Name: Intel(R) Rapid Storage Technology; Version: 11.5.0.1207
+Display Name: Photo Gallery; Version: 16.4.3505.0912
+Display Name: Intel(R) Rapid Storage Technology; Version: 11.1.0.1006
+Display Name: Junk Mail filter update; Version: 16.4.3505.0912
+Display Name: Dell Wireless Driver Installation; Version: 9.0
 Display Name: Java Auto Updater; Version: 2.1.9.5
-Display Name: {4C5D15D2-5351-4F05-A96E-56C20554F977}; Version: Null
-Display Name: {582876EC-A178-44D4-9823-C10D6C62EAFF}; Version: Null
+Display Name: Windows Live UX Platform; Version: 16.4.3505.0912
+Display Name: Cisco LEAP Module; Version: 1.0.19
+Display Name: Movie Maker; Version: 16.4.3505.0912
 Display Name: swMSM; Version: 12.0.0.1
-Display Name: Intel(R) Management Engine Components; Version: 8.1.0.1191
-Display Name: NVIDIA nTune; Version: 1.00.0000
-Display Name: PC Connectivity Solution; Version: 8.22.7.0
-Display Name: win8codecs; Version: 1.5.6
-Display Name: NVIDIA PhysX; Version: 9.12.1031
+Display Name: Cisco EAP-FAST Module; Version: 2.2.14
+Display Name: Intel(R) Management Engine Components; Version: 8.0.0.1351
+Display Name: Windows Live PIMT Platform; Version: 16.4.3505.0912
+Display Name: Google Chrome; Version: 65.107.16478
+Display Name: Windows Live Mail; Version: 16.4.3505.0912
+Display Name: Microsoft Visual C++ 2005 Redistributable; Version: 8.0.61001
+Display Name: Windows Live Family Safety; Version: 16.4.3505.0912
+Display Name: Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729; Version: 9.0.30729
+Display Name: Windows Live Writer; Version: 16.4.3505.0912
+Display Name: Windows Live SOXE Definitions; Version: 16.4.3505.0912
+Display Name: MSVCRT; Version: 15.4.2862.0708
+Display Name: MSVCRT110; Version: 16.4.1108.0727
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2162169; Version: Null
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2416472; Version: Null
+Display Name: Update for Microsoft .NET Framework 4 Extended (KB2468871); Version: 1
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2478063; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Extended (KB2487367); Version: 1
+Display Name: Update for Microsoft .NET Framework 4 Extended (KB2533523); Version: 1
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2544514; Version: Null
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2572063; Version: Null
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2599651; Version: Null
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2600211; Version: Null
+Display Name: Update for Microsoft .NET Framework 4 Extended (KB2600217); Version: 1
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2604121; Version: Null
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2639327; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Extended (KB2656351); Version: 1
+Display Name: {8E34682C-8118-31F1-BC4C-98CD9675E1C2}.KB2682543; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Extended (KB2736428); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Extended (KB2742595); Version: 1
+Display Name: Update for Microsoft .NET Framework 4 Extended (KB2836939); Version: 1
+Display Name: Microsoft Office; Version: 14.0.6120.5004
+Display Name: Windows Live Writer; Version: 16.4.3505.0912
 Display Name: Google Drive; Version: 1.10.4769.632
-Display Name: Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17; Version: 9.0.30729
 Display Name: Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161; Version: 9.0.30729.6161
-Display Name: Adobe AIR; Version: 3.7.0.1860
+Display Name: Adobe AIR; Version: 3.7.0.2090
 Display Name: Google Update Helper; Version: 1.3.21.145
-Display Name: Nokia Connectivity Cable Driver; Version: 7.0.2.0
-Display Name: Universal Adb Driver; Version: 1.0.0
-Display Name: {E6931688-DA2B-4E16-8539-3D323D69C677}; Version: Null
-Display Name: Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219; Version: 10.0.40219
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB2151757; Version: Null
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB2467173; Version: Null
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB2524860; Version: Null
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB2544655; Version: Null
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB2549743; Version: Null
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB2565063; Version: Null
-Display Name: {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}.KB982573; Version: Null
-Display Name: Realtek High Definition Audio Driver; Version: 6.0.1.6657
-Display Name: LibreOffice 4.0.3.3; Version: 4.0.3.3
-Display Name: Intel(R) Control Center; Version: 1.2.1.1008
-Display Name: Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022; Version: 9.0.21022
+Display Name: Adobe Reader XI (11.0.03); Version: 11.0.03
+Display Name: Windows Live Mail; Version: 16.4.3505.0912
+Display Name: Windows Live Essentials; Version: 16.4.3505.0912
+Display Name: Windows Live Installer; Version: 16.4.3505.0912
+Display Name: Windows Live Photo Common; Version: 16.4.3505.0912
+Display Name: MSVCRT_amd64; Version: 15.4.2862.0708
+Display Name: Windows Live Writer; Version: 16.4.3505.0912
+Display Name: Photo Common; Version: 16.4.3505.0912
+Display Name: {DA5E371C-6333-3D8A-93A4-6FD5B20BCC6E}.KB2151757; Version: Null
+Display Name: {DA5E371C-6333-3D8A-93A4-6FD5B20BCC6E}.KB982573; Version: Null
+Display Name: D3DX10; Version: 15.4.2368.0902
+Display Name: Jump Desktop; Version: 3.3.3
+Display Name: Cisco PEAP Module; Version: 1.1.6
+Display Name: Movie Maker; Version: 16.4.3505.0912
+Display Name: Microsoft SQL Server 2005 Compact Edition [ENU]; Version: 3.1.0000
+Display Name: Intel(R) Processor Graphics; Version: 9.17.10.2932
+Display Name: Realtek High Definition Audio Driver; Version: 6.0.1.6554
+Display Name: Consumer In-Home Service Agreement; Version: 2.0.0
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2160841; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2162169; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2446708; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2446708v2; Version: Null
+Display Name: Update for Microsoft .NET Framework 4 Client Profile (KB2468871); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2473228; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2478063; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2478663; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2514805; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2518870); Version: 1
+Display Name: Update for Microsoft .NET Framework 4 Client Profile (KB2533523); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2539636); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2544514; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2572063; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2572078); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2599651; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2600211; Version: Null
+Display Name: Update for Microsoft .NET Framework 4 Client Profile (KB2600217); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2604121); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2633870; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2639327; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2656351); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2656368; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2656368v2; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2656405; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2686827; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2698021; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2729449); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2732797; Version: Null
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2736428); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2737019); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2742595); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2789642); Version: 1
+Display Name: Security Update for Microsoft .NET Framework 4 Client Profile (KB2804576); Version: 1
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2832407; Version: Null
+Display Name: {F5B09CFD-F0B2-36AF-8DF4-1DF6B63FC7B4}.KB2835393; Version: Null
+Display Name: Update for Microsoft .NET Framework 4 Client Profile (KB2836939); Version: 1
+Display Name: Intel(R) Control Center; Version: 1.2.1.1007
+Display Name: Photo Gallery; Version: 16.4.3505.0912
+Display Name: Windows Live SOXE; Version: 16.4.3505.0912
